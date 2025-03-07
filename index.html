@@ -3,36 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button with PNG Background</title>
+    <title>投資術</title>
     <style>
         body {
-            background-image: url('aaaaa.png'); /* 背景画像のパス */
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
-            flex-direction: column;
-        }
-        .button {
-            display: inline-block;
-            width: 300px; /* ボタンの幅 */
-            height: 100px; /* ボタンの高さ */
-            background-image: url('全力でサポートするからこその実績 (3).png'); /* ボタン画像のパス */
-            background-size: contain;
+            padding: 0;
+            background-image: url('aaaaa.png'); /* 背景画像を設定 */
+            background-size: cover;
+            background-position: center;
             background-repeat: no-repeat;
-            border: none;
-            text-align: center;
-            line-height: 100px; /* ボタンの高さと同じにしてテキストを中央に配置 */
-            font-size: 20px;
+            font-family: 'Arial', sans-serif;
             color: white;
-            text-decoration: none;
+            text-align: center;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .title {
+            font-size: 2em;
+            font-weight: bold;
             margin-top: 20px;
+        }
+
+        .sub-title {
+            font-size: 1.5em;
+            background: rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        .investment-details {
+            margin-top: 30px;
+            background: rgba(255, 255, 255, 0.8);
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        .investment-item {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        .arrow {
+            font-size: 1.5em;
+            color: gold;
         }
     </style>
 </head>
 <body>
-    <a href="https://drive.google.com/file/d/1H_V7u-mDiYP_5Sl6LlfaWnc4qmTXcAfQ/view" class="button"></a>
+
+    <div class="content">
+        <div class="title">投資のプロが教える</div>
+        <div class="sub-title">簡単に稼げる投資術</div>
+
+        <div class="investment-details">
+            <div class="investment-item">初期費用 10万円 <span class="arrow">▶</span> 利益 190万円</div>
+            <div class="investment-item">初期費用 40万円 <span class="arrow">▶</span> 利益 306万円</div>
+            <div class="investment-item">初期費用 100万円 <span class="arrow">▶</span> 利益 560万円</div>
+        </div>
+    </div>
+
 </body>
 </html>
