@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Button with PNG Background</title>
     <style>
+        body {
+            background-image: url('aaaaa.png'); /* 背景画像のパス */
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
         .button {
             display: inline-block;
-            width: 200px; /* ボタンの幅 */
+            width: 300px; /* ボタンの幅 */
             height: 100px; /* ボタンの高さ */
-            background-image: url('aaaaa.png'); /* PNG画像のパス */
-            background-size: cover;
+            background-image: url('全力でサポートするからこその実績 (3).png'); /* ボタン画像のパス */
+            background-size: contain;
+            background-repeat: no-repeat;
             border: none;
             text-align: center;
             line-height: 100px; /* ボタンの高さと同じにしてテキストを中央に配置 */
@@ -21,6 +31,6 @@
     </style>
 </head>
 <body>
-    <a href="https://drive.google.com/file/d/1H_V7u-mDiYP_5Sl6LlfaWnc4qmTXcAfQ/view" class="button">全力で</a>
+    <a href="https://drive.google.com/file/d/1H_V7u-mDiYP_5Sl6LlfaWnc4qmTXcAfQ/view" class="button"></a>
 </body>
 </html>
